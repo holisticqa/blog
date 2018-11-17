@@ -32,10 +32,10 @@ class Bio extends React.Component {
           Written by <strong>Kasia Balcerzak</strong> and <strong> Bart Szulc</strong> who live in Gdansk and works at Spartez / Atlassian making cool stuff.{' '}
           <div>
           <div id="bartTwitter"><a href="https://twitter.com/BartSzulc">
-            Follow Bart on Twitter
+            @BartSzulc
           </a></div> 
           <div id="kasiaTitter"><a href="https://twitter.com/kasia_balcerzak">
-            and Kasia as well.
+            @kasia_balcerzak
           </a></div>
           </div>
           </p>
