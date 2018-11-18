@@ -15,8 +15,9 @@ class Bio extends React.Component {
         style={{
           display: 'flex',
           marginBottom: rhythm(2.5),
+          marginLeft: rhythm(2.5),
+          fontStyle: 'italic',
         }}
-        
       >
         <img
           src={profilePic}
@@ -30,14 +31,13 @@ class Bio extends React.Component {
         />
         <p>
           Written by <strong>Kasia Balcerzak</strong> and <strong> Bart Szulc</strong> who live in Gdansk and works at Spartez / Atlassian making cool stuff.{' '}
-          <div>
-          <div id="bartTwitter"><a href="https://twitter.com/BartSzulc">
-            @BartSzulc
-          </a></div> 
-          <div id="kasiaTitter"><a href="https://twitter.com/kasia_balcerzak">
-            @kasia_balcerzak
-          </a></div>
-          </div>
+          <a href="https://twitter.com/BartSzulc">
+            Follow Bart on Twitter
+          </a>
+          &nbsp; and &nbsp;
+          <a href="https://twitter.com/kasia_balcerzak">
+              kasia as well.
+          </a>
           </p>
       </div>
     )
