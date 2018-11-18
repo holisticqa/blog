@@ -2,6 +2,8 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link,graphql } from 'gatsby'
 import get from 'lodash/get'
+import { DiscussionEmbed } from "disqus-react";
+
 
 import Bio from '../components/Bio'
 import Layout from '../components/Layout'
@@ -13,6 +15,11 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, 'data.site.siteMetadata.title')
     const siteDescription = post.excerpt
     const { previous, next } = this.props.pageContext
+    const disqusShortname = "holisticqa";
+    const disqusConfig = {
+      identifier: post.id,
+      title: post.frontmatter.title,
+    };
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -66,6 +73,7 @@ class BlogPostTemplate extends React.Component {
             }
           </li>
         </ul>
+        <DiscussionEmbed shortname={disqusShortname} config={disqusConfig} />
       </Layout>
     )
   }
